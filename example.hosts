@@ -1,0 +1,18 @@
+ipv6only.me
+$ttl 38400
+ipv6only.me.	IN	SOA	ipv6only.me. mithro.mithis.net. (
+			1066000068
+			10800
+			3600
+			604800
+			38400 )
+ipv6only.me.		IN	NS	ns1
+ipv6only.me.		IN	NS	ns2
+ipv6only.me.		IN	NS	ns3
+
+ns1			IN	AAAA	2001:4dd0:fd68:1::1
+ns2			IN	AAAA	2607:fe70:0:3::b
+ns3			IN	AAAA	2607:fe70:0:4::b
+
+ipv6only.me.		IN	AAAA    2001:4dd0:fd68:2::1
+*			IN	CNAME	ipv6only.me.
