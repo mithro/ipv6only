@@ -5,7 +5,7 @@ header("Expires: -1");
 
 // Actual output
 $ip = getenv("REMOTE_ADDR");
-if ($_GET['format'] == 'json' ) {
+if (@$_GET['format'] == 'json' ) {
 	// This is a text file
 	header("Content-Type: application/json");
 	if ($_GET['jsonp']) {

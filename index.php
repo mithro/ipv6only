@@ -43,7 +43,7 @@ if (isset($analytics)) {
    </li><li>
     Using in Web Pages via JSON API.
     <pre>
-&gt;script&lt;
+&lt;script&gt;
 function yesIPv6(address) {
   alert(address);
 }
@@ -51,18 +51,18 @@ function yesIPv6(address) {
 function noIPv6() {
   alert('No IPv6 for you.');
 }
-&gt;/script&lt;
-&gt;!-- yesIPv6 will be called with the IP6 address if they <b>are</b> IPv6 enabled. 
+&lt;/script&gt;
+&lt;!-- yesIPv6 will be called with the IP6 address if they <b>are</b> IPv6 enabled. 
      noIPv6 will be called if they are <b>not</b> IPv6 enabled or there IPv6 routing is borked.
      We run this script in async mode, as the failure may take a long time if IPV6 routing is borked.
-  --&lt;
-&gt;script
+  --&gt;
+&lt;script
   type="text/javascript"
-  src="http://ipv6only.me/address.php?output=json&amp;jsonp=yesIPv6"
+  src="http://ipv6only.me/address.php?format=json&amp;jsonp=yesIPv6"
   onerror="noIPv6();"
-  async="async"
-&lt;
-&gt;/script&lt;
+  async="true"
+&gt;
+&lt;/script&gt;
 </pre>
    </li>
   </ul>
