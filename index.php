@@ -25,7 +25,7 @@ if (isset($analytics)) {
  <p>
   This page is <b>only</b> avaliable over IPv6. 
  </p><p>
-  Congradulations, on being IPv6 enabled.
+  Congratulations, on being IPv6 enabled.
  </p><p>
   Your address is <b style="text-color: red;"><?php echo getenv ("REMOTE_ADDR"); ?></b>.
  </p>
